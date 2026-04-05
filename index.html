@@ -872,7 +872,7 @@ function renderPicks() {
     </div>`;
 
   standings.forEach((team, i) => {
-    const projPick = \`\${i + 1}.\${i + 1}\`;
+    const projPick = (i + 1) + '.' + (i + 1);
     const isTop2 = i < 2;
     const isBottom2 = i >= standings.length - 2;
     const rankColor = isTop2 ? 'var(--green)' : isBottom2 ? 'var(--red)' : 'var(--muted)';
