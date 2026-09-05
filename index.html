@@ -891,7 +891,7 @@
 // DATA — auto-populated by Google Apps Script
 // ============================================================
 const LEAGUE_DATA = {
-  lastUpdated: "September 4, 2026",
+  lastUpdated: "September 5, 2026",
   settings: {
     totalCap: 200,
     inSeasonCap: 250,
@@ -903,7 +903,7 @@ const LEAGUE_DATA = {
   teams: [
   {
     "name": "Allen",
-    "capRemaining": 71,
+    "capRemaining": 0,
     "voidCost": 0,
     "record": "0-0",
     "pf": 0.0,
@@ -959,6 +959,12 @@ const LEAGUE_DATA = {
         "years": 2
       },
       {
+        "name": "Derrick Henry",
+        "pos": "RB",
+        "cost": 30.0,
+        "years": 1
+      },
+      {
         "name": "Josh Jacobs",
         "pos": "RB",
         "cost": 21.0,
@@ -971,10 +977,22 @@ const LEAGUE_DATA = {
         "years": 2
       },
       {
+        "name": "Christian Watson",
+        "pos": "WR",
+        "cost": 14.0,
+        "years": 4
+      },
+      {
         "name": "Zay Flowers",
         "pos": "WR",
         "cost": 12.0,
         "years": 2
+      },
+      {
+        "name": "Drake Maye",
+        "pos": "QB",
+        "cost": 12.0,
+        "years": 4
       },
       {
         "name": "James Cook",
@@ -1001,10 +1019,28 @@ const LEAGUE_DATA = {
         "years": 3
       },
       {
+        "name": "Jalen Coker",
+        "pos": "WR",
+        "cost": 6.0,
+        "years": 1
+      },
+      {
+        "name": "Michael Wilson",
+        "pos": "WR",
+        "cost": 5.0,
+        "years": 2
+      },
+      {
         "name": "Xavier Legette",
         "pos": "WR",
         "cost": 4.0,
         "years": 1
+      },
+      {
+        "name": "Tony Pollard",
+        "pos": "RB",
+        "cost": 4.0,
+        "years": 2
       },
       {
         "name": "Baker Mayfield",
@@ -1034,7 +1070,7 @@ const LEAGUE_DATA = {
   },
   {
     "name": "Matt",
-    "capRemaining": 30,
+    "capRemaining": 10,
     "voidCost": 0,
     "record": "0-0",
     "pf": 0.0,
@@ -1138,6 +1174,36 @@ const LEAGUE_DATA = {
         "years": 2
       },
       {
+        "name": "Jayden Daniels",
+        "pos": "QB",
+        "cost": 6.0,
+        "years": 3
+      },
+      {
+        "name": "Jacory Croskey-Merritt",
+        "pos": "RB",
+        "cost": 4.0,
+        "years": 1
+      },
+      {
+        "name": "Kyle Pitts",
+        "pos": "TE",
+        "cost": 3.0,
+        "years": 2
+      },
+      {
+        "name": "Jake Ferguson",
+        "pos": "TE",
+        "cost": 3.0,
+        "years": 1
+      },
+      {
+        "name": "Bo Nix",
+        "pos": "QB",
+        "cost": 2.0,
+        "years": 2
+      },
+      {
         "name": "Jayden Higgins",
         "pos": "WR",
         "cost": 1.0,
@@ -1160,12 +1226,24 @@ const LEAGUE_DATA = {
         "pos": "WR",
         "cost": 1.0,
         "years": 3
+      },
+      {
+        "name": "Zach Charbonnet",
+        "pos": "RB",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Tyreek Hill",
+        "pos": "WR",
+        "cost": 1.0,
+        "years": 1
       }
     ]
   },
   {
     "name": "Isaac",
-    "capRemaining": 22,
+    "capRemaining": 14,
     "voidCost": 0,
     "record": "0-0",
     "pf": 0.0,
@@ -1231,13 +1309,61 @@ const LEAGUE_DATA = {
         "pos": "WR",
         "cost": 1.0,
         "years": 3
+      },
+      {
+        "name": "Brock Purdy",
+        "pos": "QB",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Jared Goff",
+        "pos": "QB",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Jalen Nailor",
+        "pos": "WR",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Kyler Murray",
+        "pos": "QB",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Cyrus Allen",
+        "pos": "WR",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Terrance Ferguson",
+        "pos": "TE",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Caleb Douglas",
+        "pos": "WR",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Keaton Mitchell",
+        "pos": "RB",
+        "cost": 1.0,
+        "years": 1
       }
     ]
   },
   {
     "name": "Yeison",
-    "capRemaining": 80,
-    "voidCost": 0,
+    "capRemaining": 14,
+    "voidCost": 1,
     "record": "0-0",
     "pf": 0.0,
     "picks": [
@@ -1286,16 +1412,28 @@ const LEAGUE_DATA = {
         "years": 2
       },
       {
+        "name": "Marvin Harrison Jr",
+        "pos": "WR",
+        "cost": 19.0,
+        "years": 4
+      },
+      {
         "name": "Drake London",
         "pos": "WR",
         "cost": 17.0,
         "years": 2
       },
       {
-        "name": "Ricky Pearsall",
+        "name": "Davante Adams",
         "pos": "WR",
-        "cost": 13.0,
-        "years": 3
+        "cost": 16.0,
+        "years": 1
+      },
+      {
+        "name": "Jaxson Dart",
+        "pos": "QB",
+        "cost": 15.0,
+        "years": 4
       },
       {
         "name": "Terry McLaurin",
@@ -1316,10 +1454,22 @@ const LEAGUE_DATA = {
         "years": 3
       },
       {
+        "name": "Rico Dowdle",
+        "pos": "RB",
+        "cost": 10.0,
+        "years": 2
+      },
+      {
         "name": "Christian Kirk",
         "pos": "WR",
         "cost": 9.0,
         "years": 1
+      },
+      {
+        "name": "Isaiah Likely",
+        "pos": "TE",
+        "cost": 7.0,
+        "years": 3
       },
       {
         "name": "Tetairoa McMillan",
@@ -1334,10 +1484,28 @@ const LEAGUE_DATA = {
         "years": 1
       },
       {
-        "name": "Tank Bigsby",
+        "name": "Jordan Mason",
         "pos": "RB",
+        "cost": 5.0,
+        "years": 2
+      },
+      {
+        "name": "Ja'Kobi Lane",
+        "pos": "WR",
+        "cost": 3.0,
+        "years": 2
+      },
+      {
+        "name": "Tyler Allgeier",
+        "pos": "RB",
+        "cost": 3.0,
+        "years": 2
+      },
+      {
+        "name": "Wandale Robinson",
+        "pos": "WR",
         "cost": 2.0,
-        "years": 1
+        "years": 2
       },
       {
         "name": "Luther Burden",
@@ -1355,7 +1523,7 @@ const LEAGUE_DATA = {
   },
   {
     "name": "Charlie",
-    "capRemaining": 10,
+    "capRemaining": 8,
     "voidCost": 3,
     "record": "0-0",
     "pf": 0.0,
@@ -1487,6 +1655,18 @@ const LEAGUE_DATA = {
         "pos": "WR",
         "cost": 1.0,
         "years": 3
+      },
+      {
+        "name": "Malik Willis",
+        "pos": "QB",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Juwan Johnson",
+        "pos": "TE",
+        "cost": 1.0,
+        "years": 1
       }
     ]
   },
@@ -1635,7 +1815,7 @@ const LEAGUE_DATA = {
   },
   {
     "name": "Ryan",
-    "capRemaining": 111,
+    "capRemaining": 57,
     "voidCost": 15,
     "record": "0-0",
     "pf": 0.0,
@@ -1655,10 +1835,22 @@ const LEAGUE_DATA = {
     ],
     "players": [
       {
+        "name": "David Montgomery",
+        "pos": "RB",
+        "cost": 19.0,
+        "years": 2
+      },
+      {
         "name": "Rome Odunze",
         "pos": "WR",
         "cost": 16.0,
         "years": 2
+      },
+      {
+        "name": "Bucky Irving",
+        "pos": "RB",
+        "cost": 15.0,
+        "years": 4
       },
       {
         "name": "Travis Kelce",
@@ -1685,6 +1877,18 @@ const LEAGUE_DATA = {
         "years": 3
       },
       {
+        "name": "Mike Evans",
+        "pos": "WR",
+        "cost": 5.0,
+        "years": 2
+      },
+      {
+        "name": "Kyle Monangai",
+        "pos": "RB",
+        "cost": 5.0,
+        "years": 2
+      },
+      {
         "name": "Patrick Mahomes",
         "pos": "QB",
         "cost": 4.0,
@@ -1695,6 +1899,18 @@ const LEAGUE_DATA = {
         "pos": "TE",
         "cost": 4.0,
         "years": 3
+      },
+      {
+        "name": "Dak Prescott",
+        "pos": "QB",
+        "cost": 4.0,
+        "years": 2
+      },
+      {
+        "name": "Kenny Gainwell",
+        "pos": "RB",
+        "cost": 4.0,
+        "years": 2
       },
       {
         "name": "Calvin Austin",
@@ -1713,6 +1929,12 @@ const LEAGUE_DATA = {
         "pos": "RB",
         "cost": 2.0,
         "years": 1
+      },
+      {
+        "name": "Deebo Samuel",
+        "pos": "WR",
+        "cost": 2.0,
+        "years": 2
       },
       {
         "name": "Cam Ward",
@@ -1736,7 +1958,7 @@ const LEAGUE_DATA = {
   },
   {
     "name": "Joseph",
-    "capRemaining": 38,
+    "capRemaining": 13,
     "voidCost": 0,
     "record": "0-0",
     "pf": 0.0,
@@ -1798,6 +2020,12 @@ const LEAGUE_DATA = {
         "years": 2
       },
       {
+        "name": "Jameson Williams",
+        "pos": "WR",
+        "cost": 17.0,
+        "years": 4
+      },
+      {
         "name": "Jordan Addison",
         "pos": "WR",
         "cost": 12.0,
@@ -1832,12 +2060,60 @@ const LEAGUE_DATA = {
         "pos": "WR",
         "cost": 1.0,
         "years": 2
+      },
+      {
+        "name": "Oronde Gadsden",
+        "pos": "TE",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Matthew Stafford",
+        "pos": "QB",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "AJ Barner",
+        "pos": "TE",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Alvin Kamara",
+        "pos": "RB",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Drew Allar",
+        "pos": "QB",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Emmett Johnson",
+        "pos": "RB",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "TJ Hockenson",
+        "pos": "TE",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Tre Tucker",
+        "pos": "WR",
+        "cost": 1.0,
+        "years": 1
       }
     ]
   },
   {
     "name": "Ben",
-    "capRemaining": 53,
+    "capRemaining": 52,
     "voidCost": 0,
     "record": "0-0",
     "pf": 0.0,
@@ -1963,13 +2239,19 @@ const LEAGUE_DATA = {
         "pos": "TE",
         "cost": 1.0,
         "years": 3
+      },
+      {
+        "name": "Brenton Strange",
+        "pos": "TE",
+        "cost": 1.0,
+        "years": 1
       }
     ]
   },
   {
     "name": "Caleb",
-    "capRemaining": 8,
-    "voidCost": 0,
+    "capRemaining": 3,
+    "voidCost": 1,
     "record": "0-0",
     "pf": 0.0,
     "picks": [
@@ -2084,16 +2366,46 @@ const LEAGUE_DATA = {
         "years": 1
       },
       {
-        "name": "Rashod Bateman",
-        "pos": "WR",
-        "cost": 2.0,
-        "years": 1
-      },
-      {
         "name": "Jonah Coleman",
         "pos": "RB",
         "cost": 2.0,
         "years": 3
+      },
+      {
+        "name": "Isaac TeSlaa",
+        "pos": "WR",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Tyrone Tracy",
+        "pos": "RB",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Aaron Jones",
+        "pos": "RB",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Jordan Love",
+        "pos": "QB",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Dallas Goedert",
+        "pos": "TE",
+        "cost": 1.0,
+        "years": 1
+      },
+      {
+        "name": "Keenan Allen",
+        "pos": "WR",
+        "cost": 1.0,
+        "years": 1
       }
     ]
   }
