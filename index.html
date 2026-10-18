@@ -306,41 +306,6 @@
     gap: 12px;
   }
 
-  .team-header-left { display: flex; align-items: center; gap: 12px; }
-
-  .team-avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--border);
-    flex-shrink: 0;
-    background: var(--surface);
-  }
-
-  .team-avatar-sm {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid var(--border);
-    flex-shrink: 0;
-    background: var(--surface);
-    vertical-align: middle;
-    margin-right: 8px;
-  }
-
-  .team-avatar-lg {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--border);
-    margin: 0 auto 8px;
-    display: block;
-    background: var(--surface);
-  }
-
   .team-name {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 24px;
@@ -926,7 +891,7 @@
 // DATA — auto-populated by Google Apps Script
 // ============================================================
 const LEAGUE_DATA = {
-  lastUpdated: "October 9, 2026",
+  lastUpdated: "October 18, 2026",
   settings: {
     totalCap: 200,
     inSeasonCap: 250,
@@ -938,17 +903,10 @@ const LEAGUE_DATA = {
   teams: [
   {
     "name": "Allen",
-    "capRemaining": -1,
+    "capRemaining": 20,
     "voidCost": 0,
-    "voidByYear": {
-      "2026": 0,
-      "2027": 0,
-      "2028": 0,
-      "2029": 0
-    },
-    "record": "3-1",
-    "pf": 584.46,
-    "avatar": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c",
+    "record": "4-1",
+    "pf": 772.1,
     "picks": [
       {
         "year": 2027,
@@ -988,9 +946,21 @@ const LEAGUE_DATA = {
       },
       {
         "year": 2029,
+        "origTeam": "Ryan",
+        "round": 1,
+        "pickNum": "2.10"
+      },
+      {
+        "year": 2029,
         "origTeam": "Allen",
         "round": 2,
         "pickNum": "2.10"
+      },
+      {
+        "year": 2029,
+        "origTeam": "Ryan",
+        "round": 2,
+        "pickNum": "2.1"
       }
     ],
     "players": [
@@ -1005,12 +975,6 @@ const LEAGUE_DATA = {
         "pos": "RB",
         "cost": 30.0,
         "years": 1
-      },
-      {
-        "name": "Josh Jacobs",
-        "pos": "RB",
-        "cost": 21.0,
-        "years": 2
       },
       {
         "name": "Trey McBride",
@@ -1118,17 +1082,10 @@ const LEAGUE_DATA = {
   },
   {
     "name": "Matt",
-    "capRemaining": 10,
+    "capRemaining": 16,
     "voidCost": 0,
-    "voidByYear": {
-      "2026": 0,
-      "2027": 0,
-      "2028": 0,
-      "2029": 0
-    },
-    "record": "1-3",
-    "pf": 434.3,
-    "avatar": "https://sleepercdn.com/avatars/thumbs/f0edbf4278f53f9425db175073df6584",
+    "record": "1-4",
+    "pf": 546.96,
     "picks": [
       {
         "year": 2027,
@@ -1223,12 +1180,6 @@ const LEAGUE_DATA = {
         "years": 1
       },
       {
-        "name": "Kaleb Johnson",
-        "pos": "RB",
-        "cost": 6.0,
-        "years": 2
-      },
-      {
         "name": "Jayden Daniels",
         "pos": "QB",
         "cost": 6.0,
@@ -1300,15 +1251,8 @@ const LEAGUE_DATA = {
     "name": "Isaac",
     "capRemaining": 2,
     "voidCost": 0,
-    "voidByYear": {
-      "2026": 0,
-      "2027": 0,
-      "2028": 0,
-      "2029": 0
-    },
-    "record": "3-1",
-    "pf": 590.92,
-    "avatar": "https://sleepercdn.com/avatars/thumbs/6af6bfec13a7deaa05ee49e5545c7e00",
+    "record": "4-1",
+    "pf": 724.96,
     "picks": [
       {
         "year": 2029,
@@ -1320,7 +1264,7 @@ const LEAGUE_DATA = {
         "year": 2029,
         "origTeam": "Isaac",
         "round": 2,
-        "pickNum": "2.10"
+        "pickNum": "2.8"
       }
     ],
     "players": [
@@ -1438,51 +1382,44 @@ const LEAGUE_DATA = {
     "name": "Yeison",
     "capRemaining": 6,
     "voidCost": 8,
-    "voidByYear": {
-      "2026": 8,
-      "2027": 4,
-      "2028": 2,
-      "2029": 0
-    },
-    "record": "2-2",
-    "pf": 529.56,
-    "avatar": "https://sleepercdn.com/avatars/thumbs/2c8a1173e82bccc42b1a0b838958792c",
+    "record": "3-2",
+    "pf": 668.74,
     "picks": [
       {
         "year": 2027,
         "origTeam": "Yeison",
         "round": 1,
-        "pickNum": "1.1"
+        "pickNum": "1.6"
       },
       {
         "year": 2027,
         "origTeam": "Yeison",
         "round": 2,
-        "pickNum": "2.1"
+        "pickNum": "2.6"
       },
       {
         "year": 2028,
         "origTeam": "Yeison",
         "round": 1,
-        "pickNum": "1.1"
+        "pickNum": "1.6"
       },
       {
         "year": 2028,
         "origTeam": "Yeison",
         "round": 2,
-        "pickNum": "2.1"
+        "pickNum": "2.6"
       },
       {
         "year": 2029,
         "origTeam": "Yeison",
         "round": 1,
-        "pickNum": "1.1"
+        "pickNum": "1.6"
       },
       {
         "year": 2029,
         "origTeam": "Yeison",
         "round": 2,
-        "pickNum": "2.1"
+        "pickNum": "2.6"
       }
     ],
     "players": [
@@ -1612,57 +1549,50 @@ const LEAGUE_DATA = {
     "name": "Charlie",
     "capRemaining": 2,
     "voidCost": 3,
-    "voidByYear": {
-      "2026": 3,
-      "2027": 0,
-      "2028": 0,
-      "2029": 0
-    },
-    "record": "2-2",
-    "pf": 622.84,
-    "avatar": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c",
+    "record": "2-3",
+    "pf": 761.86,
     "picks": [
       {
         "year": 2027,
         "origTeam": "Charlie",
         "round": 1,
-        "pickNum": "1.8"
+        "pickNum": "1.5"
       },
       {
         "year": 2027,
         "origTeam": "Charlie",
         "round": 2,
-        "pickNum": "2.8"
+        "pickNum": "2.5"
       },
       {
         "year": 2027,
         "origTeam": "Allen",
         "round": 2,
-        "pickNum": "2.9"
+        "pickNum": "2.10"
       },
       {
         "year": 2028,
         "origTeam": "Charlie",
         "round": 1,
-        "pickNum": "1.8"
+        "pickNum": "1.5"
       },
       {
         "year": 2028,
         "origTeam": "Charlie",
         "round": 2,
-        "pickNum": "2.8"
+        "pickNum": "2.5"
       },
       {
         "year": 2029,
         "origTeam": "Charlie",
         "round": 1,
-        "pickNum": "1.8"
+        "pickNum": "1.5"
       },
       {
         "year": 2029,
         "origTeam": "Charlie",
         "round": 2,
-        "pickNum": "2.8"
+        "pickNum": "2.5"
       }
     ],
     "players": [
@@ -1786,51 +1716,44 @@ const LEAGUE_DATA = {
     "name": "Adam",
     "capRemaining": 52,
     "voidCost": 0,
-    "voidByYear": {
-      "2026": 0,
-      "2027": 0,
-      "2028": 0,
-      "2029": 0
-    },
-    "record": "2-2",
-    "pf": 530.36,
-    "avatar": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c",
+    "record": "3-2",
+    "pf": 690.6,
     "picks": [
       {
         "year": 2027,
         "origTeam": "Adam",
         "round": 1,
-        "pickNum": "1.2"
+        "pickNum": "1.7"
       },
       {
         "year": 2027,
         "origTeam": "Allen",
         "round": 1,
-        "pickNum": "1.9"
+        "pickNum": "1.10"
       },
       {
         "year": 2028,
         "origTeam": "Adam",
         "round": 1,
-        "pickNum": "1.2"
+        "pickNum": "1.7"
       },
       {
         "year": 2028,
         "origTeam": "Adam",
         "round": 2,
-        "pickNum": "2.2"
+        "pickNum": "2.7"
       },
       {
         "year": 2029,
         "origTeam": "Adam",
         "round": 1,
-        "pickNum": "1.2"
+        "pickNum": "1.7"
       },
       {
         "year": 2029,
         "origTeam": "Adam",
         "round": 2,
-        "pickNum": "2.2"
+        "pickNum": "2.7"
       }
     ],
     "players": [
@@ -1946,36 +1869,22 @@ const LEAGUE_DATA = {
   },
   {
     "name": "Ryan",
-    "capRemaining": -9,
+    "capRemaining": -30,
     "voidCost": 15,
-    "voidByYear": {
-      "2026": 15,
-      "2027": 3,
-      "2028": 2,
-      "2029": 0
-    },
-    "record": "0-4",
-    "pf": 455.7,
-    "avatar": "https://sleepercdn.com/avatars/thumbs/15d7cf259bc30eab8f6120f45f652fb6",
-    "picks": [
-      {
-        "year": 2029,
-        "origTeam": "Ryan",
-        "round": 1,
-        "pickNum": "1.7"
-      },
-      {
-        "year": 2029,
-        "origTeam": "Ryan",
-        "round": 2,
-        "pickNum": "2.7"
-      }
-    ],
+    "record": "0-5",
+    "pf": 563.44,
+    "picks": [],
     "players": [
       {
         "name": "Breece Hall",
         "pos": "RB",
         "cost": 50.0,
+        "years": 2
+      },
+      {
+        "name": "Josh Jacobs",
+        "pos": "RB",
+        "cost": 21.0,
         "years": 2
       },
       {
@@ -2098,15 +2007,8 @@ const LEAGUE_DATA = {
     "name": "Joseph",
     "capRemaining": 19,
     "voidCost": 0,
-    "voidByYear": {
-      "2026": 0,
-      "2027": 0,
-      "2028": 0,
-      "2029": 0
-    },
-    "record": "1-3",
-    "pf": 421.26,
-    "avatar": "https://sleepercdn.com/avatars/thumbs/af96c24f114501f9580eed48e7d336ad",
+    "record": "2-3",
+    "pf": 535.28,
     "picks": [
       {
         "year": 2027,
@@ -2264,17 +2166,10 @@ const LEAGUE_DATA = {
   },
   {
     "name": "Ben",
-    "capRemaining": 51,
+    "capRemaining": 45,
     "voidCost": 0,
-    "voidByYear": {
-      "2026": 0,
-      "2027": 0,
-      "2028": 0,
-      "2029": 0
-    },
-    "record": "2-2",
-    "pf": 412.46,
-    "avatar": "https://sleepercdn.com/avatars/thumbs/e7af4deab0289b4f5505646424895246",
+    "record": "2-3",
+    "pf": 522.56,
     "picks": [
       {
         "year": 2027,
@@ -2393,6 +2288,12 @@ const LEAGUE_DATA = {
         "years": 1
       },
       {
+        "name": "Kaleb Johnson",
+        "pos": "RB",
+        "cost": 6.0,
+        "years": 2
+      },
+      {
         "name": "Jadarian Price",
         "pos": "RB",
         "cost": 6.0,
@@ -2458,51 +2359,44 @@ const LEAGUE_DATA = {
     "name": "Caleb",
     "capRemaining": 3,
     "voidCost": 1,
-    "voidByYear": {
-      "2026": 1,
-      "2027": 0,
-      "2028": 0,
-      "2029": 0
-    },
-    "record": "4-0",
-    "pf": 621.44,
-    "avatar": "https://sleepercdn.com/avatars/thumbs/4da49c77b3085832857492401270a10e",
+    "record": "4-1",
+    "pf": 766.04,
     "picks": [
       {
         "year": 2027,
         "origTeam": "Caleb",
         "round": 1,
-        "pickNum": "1.5"
+        "pickNum": "1.9"
       },
       {
         "year": 2027,
         "origTeam": "Caleb",
         "round": 2,
-        "pickNum": "2.5"
+        "pickNum": "2.9"
       },
       {
         "year": 2028,
         "origTeam": "Caleb",
         "round": 1,
-        "pickNum": "1.5"
+        "pickNum": "1.9"
       },
       {
         "year": 2028,
         "origTeam": "Caleb",
         "round": 2,
-        "pickNum": "2.5"
+        "pickNum": "2.9"
       },
       {
         "year": 2029,
         "origTeam": "Caleb",
         "round": 1,
-        "pickNum": "1.5"
+        "pickNum": "1.9"
       },
       {
         "year": 2029,
         "origTeam": "Caleb",
         "round": 2,
-        "pickNum": "2.5"
+        "pickNum": "2.9"
       }
     ],
     "players": [
@@ -2753,11 +2647,9 @@ function capFillColor(pct) {
 function buildTeamCard(team) {
   const cap = LEAGUE_DATA.settings.totalCap;
   const spent = team.players.reduce((s, p) => s + p.cost, 0);
-  const committed = spent + team.voidCost;
-  const pct = Math.min(100, (committed / cap) * 100);
+  const pct = Math.min(100, (spent / cap) * 100);
   const fillColor = capFillColor(pct);
   const remClass = capColor(team.capRemaining);
-  const avatarHtml = team.avatar ? `<img class="team-avatar" src="${team.avatar}" alt="${team.name}" onerror="this.style.display='none'">` : '';
 
   const byPos = {};
   team.players.forEach(p => {
@@ -2797,13 +2689,10 @@ function buildTeamCard(team) {
   return `
     <div class="team-card" id="card-${team.name}">
       <div class="team-header">
-        <div class="team-header-left">
-          ${avatarHtml}
-          <div>
-            <div class="team-name">${team.name}</div>
-            <div style="font-size:13px;font-weight:600;color:var(--text);margin-top:2px;">${team.record} &nbsp;<span style="color:var(--muted);font-weight:400;">·</span>&nbsp; <span style="color:var(--accent);">${team.pf} PF</span></div>
-            <div style="font-size:11px;color:var(--muted);margin-top:2px;">${team.players.length} players · $${spent} spent${team.voidCost > 0 ? ' + $'+team.voidCost+' void' : ''}</div>
-          </div>
+        <div>
+          <div class="team-name">${team.name}</div>
+          <div style="font-size:13px;font-weight:600;color:var(--text);margin-top:2px;">${team.record} &nbsp;<span style="color:var(--muted);font-weight:400;">·</span>&nbsp; <span style="color:var(--accent);">${team.pf} PF</span></div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px;">${team.players.length} players · $${spent} spent</div>
         </div>
         <div class="cap-block">
           <div class="cap-remaining ${remClass}">$${team.capRemaining}</div>
@@ -2813,7 +2702,7 @@ function buildTeamCard(team) {
       <div class="cap-bar-wrap">
         <div class="cap-bar-label">
           <span>$0</span>
-          <span style="color:var(--muted);">$${committed} / $${cap}</span>
+          <span style="color:var(--muted);">$${spent} / $${cap}</span>
           <span>$${cap}</span>
         </div>
         <div class="cap-bar">
@@ -2840,8 +2729,7 @@ function renderCap() {
 
   const rows = [...LEAGUE_DATA.teams].sort((a, b) => b.capRemaining - a.capRemaining).map(team => {
     const spent = team.players.reduce((s, p) => s + p.cost, 0);
-    const committed = spent + team.voidCost;
-    const pct = Math.min(100, (committed / cap) * 100);
+    const pct = Math.min(100, (spent / cap) * 100);
     const fillColor = capFillColor(pct);
     const remClass = capColor(team.capRemaining);
     return `
@@ -2893,12 +2781,8 @@ function renderCap() {
           return year >= startYear && year <= endYear;
         })
         .reduce((s, p) => s + p.cost, 0);
-      // Void penalties decay 50%/25%/10% across the 3 years after a cut; voidByYear
-      // carries that full schedule so 2026 reconciles with the Cap table above and
-      // 2027-2029 show the declining residual hit from any multi-year void.
-      const voidHit = (team.voidByYear && team.voidByYear[year]) || 0;
       const rookieHit = teamRookieCapInYear(team, year);
-      const trueTotal = committed + voidHit + rookieHit;
+      const trueTotal = committed + rookieHit;
       const free = cap - trueTotal;
       const pct = Math.min(100, (trueTotal / cap) * 100);
       const fillColor = pct < 70 ? 'var(--green)' : pct < 90 ? 'var(--orange)' : 'var(--red)';
@@ -2906,7 +2790,7 @@ function renderCap() {
       byYearHtml += `
         <td style="padding:8px 16px;border-bottom:1px solid var(--border);text-align:center;">
           <div style="font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:${fillColor};">$${trueTotal}</div>
-          <div style="font-size:10px;color:var(--muted);margin-top:1px;">$${committed} contracts${voidHit > 0 ? ' <span style=\'color:var(--red);\'>+$' + voidHit + ' void</span>' : ''}${rookieHit > 0 ? ' <span style=\'color:var(--orange);\'>+~$' + rookieHit + ' rookies</span>' : ''}</div>
+          <div style="font-size:10px;color:var(--muted);margin-top:1px;">$${committed} contracts${rookieHit > 0 ? ' <span style=\'color:var(--orange);\'>+~$' + rookieHit + ' rookies</span>' : ''}</div>
           <div style="font-size:10px;color:${freeColor};margin-top:1px;font-weight:600;">$${free} free</div>
           <div style="height:4px;background:var(--surface);border-radius:2px;margin-top:4px;overflow:hidden;">
             <div style="height:100%;width:${pct}%;background:${fillColor};border-radius:2px;"></div>
@@ -2917,7 +2801,7 @@ function renderCap() {
   });
 
   byYearHtml += `</tbody></table>
-    <div style="padding:8px 20px;font-size:11px;color:var(--muted);font-style:italic;">Cap committed = active contracts + void penalty for that year (void decays 50%/25%/10% across the years following a cut) · Rookie pick estimates shown in orange · Based on $${cap} cap</div>
+    <div style="padding:8px 20px;font-size:11px;color:var(--muted);font-style:italic;">Cap committed = active contracts only · Rookie pick estimates shown in orange on team cards and Cap table · Based on $${cap} cap</div>
     </div></div>`;
 
   document.getElementById('cap-view').insertAdjacentHTML('beforeend', byYearHtml);
@@ -2951,7 +2835,7 @@ function renderPicks() {
     standingsHtml += `
       <div style="display:grid;grid-template-columns:30px 1fr 70px 80px 80px;padding:10px 20px;font-size:13px;border-bottom:1px solid var(--border);align-items:center;" onmouseover="this.style.background='rgba(255,255,255,0.02)'" onmouseout="this.style.background=''">
         <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:${rankColor};">${i + 1}</span>
-        <span style="font-weight:600;">${team.avatar ? `<img class="team-avatar-sm" src="${team.avatar}" alt="" onerror="this.style.display='none'">` : ''}${team.name}</span>
+        <span style="font-weight:600;">${team.name}</span>
         <span style="text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;">${team.record}</span>
         <span style="text-align:right;color:var(--accent);font-weight:600;">${team.pf > 0 ? team.pf.toFixed(1) : '—'}</span>
         <span style="text-align:right;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:${draftSlot <= 3 ? 'var(--green)' : draftSlot >= 8 ? 'var(--red)' : 'var(--text)'};">${draftSlot}</span>
@@ -3118,12 +3002,10 @@ function updateComparison() {
   body.innerHTML = `
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;">
       <div style="text-align:center;padding:16px;background:var(--card);border:1px solid var(--border);border-radius:10px;">
-        ${L.avatar ? `<img class="team-avatar-lg" src="${L.avatar}" alt="${L.name}" onerror="this.style.display='none'">` : ''}
         <div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;color:var(--accent);">${L.name}</div>
         <div style="font-size:13px;color:var(--muted);">${L.record} · ${L.players.length} players</div>
       </div>
       <div style="text-align:center;padding:16px;background:var(--card);border:1px solid var(--border);border-radius:10px;">
-        ${R.avatar ? `<img class="team-avatar-lg" src="${R.avatar}" alt="${R.name}" onerror="this.style.display='none'">` : ''}
         <div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;color:var(--accent2);">${R.name}</div>
         <div style="font-size:13px;color:var(--muted);">${R.record} · ${R.players.length} players</div>
       </div>
@@ -3160,16 +3042,14 @@ function updateComparison() {
       ${[2026,2027,2028,2029].map(year => {
         const lC = L.players.filter(p => { const e = 2026 + p.years - 1; return year >= 2026 && year <= e; }).reduce((s,p) => s+p.cost, 0);
         const rC = R.players.filter(p => { const e = 2026 + p.years - 1; return year >= 2026 && year <= e; }).reduce((s,p) => s+p.cost, 0);
-        const lV = (L.voidByYear && L.voidByYear[year]) || 0;
-        const rV = (R.voidByYear && R.voidByYear[year]) || 0;
         const lR = teamRookieCapInYear(L, year);
         const rR = teamRookieCapInYear(R, year);
-        const lTotal = lC + lV + lR; const rTotal = rC + rV + rR;
-        const lFree = cap - lTotal; const rFree = cap - rTotal;
+        const lTotal = lC + lR; const rTotal = rC + rR;
+        const lFree = 200 - lTotal; const rFree = 200 - rTotal;
         const lWins = lFree > rFree;
         const rWins = rFree > lFree;
-        const lLabel = '$'+lTotal + (lV>0?' <span style="font-size:10px;color:var(--red);">+$'+lV+' void</span>':'') + (lR>0?' <span style="font-size:10px;color:var(--orange);">+~$'+lR+' rookies</span>':'') + ' <span style="font-size:10px;color:var(--muted);">($'+lFree+' free)</span>';
-        const rLabel = '<span style="font-size:10px;color:var(--muted);">($'+rFree+' free)</span> ' + (rV>0?'<span style="font-size:10px;color:var(--red);">+$'+rV+' void</span> ':'') + (rR>0?'<span style="font-size:10px;color:var(--orange);">+~$'+rR+' rookies</span> ':'') + '$'+rTotal;
+        const lLabel = '$'+lTotal + (lR>0?' <span style="font-size:10px;color:var(--orange);">+~$'+lR+' rookies</span>':'') + ' <span style="font-size:10px;color:var(--muted);">($'+lFree+' free)</span>';
+        const rLabel = '<span style="font-size:10px;color:var(--muted);">($'+rFree+' free)</span> ' + (rR>0?'<span style="font-size:10px;color:var(--orange);">+~$'+rR+' rookies</span> ':'') + '$'+rTotal;
         return '<div class="compare-stat-row">' +
           '<span class="compare-val-left ' + (lWins?'compare-winner':'') + '">' + lLabel + '</span>' +
           '<span class="compare-stat-label">' + year + '</span>' +
